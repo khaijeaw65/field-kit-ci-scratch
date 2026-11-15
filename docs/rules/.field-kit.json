@@ -1,0 +1,68 @@
+{
+  "kit_version": "0.1.0",
+  "generated": "2026-11-15",
+  "config": {
+    "project": {
+      "name": "field-kit CI scratch",
+      "summary": "Throwaway repo to verify the field-kit 0.1.0 CI template (checks, lock, aggregate ci) and the ruleset on real GitHub Actions.",
+      "core_flow": "brief → lock → green → push → ci",
+      "cuts": [],
+      "stretch": []
+    },
+    "owner": {
+      "id": "kj",
+      "alias": "Field",
+      "github": "khaijeaw65"
+    },
+    "members": [
+      {
+        "id": "kj",
+        "name": "KJ",
+        "role": "Owner / executor"
+      }
+    ],
+    "packs": [],
+    "root_config": [
+      "package.json",
+      ".gitignore"
+    ]
+  },
+  "rule_hashes": {
+    "docs/rules/core.md": "4370fc0880e47966ed712afb397dbc25ed86bbeb1ad7b9c34b2f4a711b52e10c",
+    ".cursor/rules/core.mdc": "99dc6eb9277d0350d72a8899837b2ba657664c45c982551d3d9a7b9fcea5d22e",
+    ".agents/rules/core.md": "436a7a8a21e1f21dc396f159bb0044f7c0bd9af216fda74334c95e94256e3016",
+    "docs/rules/workflow.md": "1cc1eb012883bd397ee01a69464c2f3ca5196a6566aade3410a7ed8579d516c6",
+    ".cursor/rules/workflow.mdc": "fb49faf96108070d245020ba13220ab4e4ff3a0ba49cb423a39eecef08098ba0",
+    ".agents/rules/workflow.md": "bdc8a8eae980e6e868d809700df73451481c0a846e87c904214b937b67d96c13",
+    "docs/rules/agent-boundaries.md": "aa276cc32504d987e0ac4182758af8c1b8cff835cda4360fe220059a04c86ba4",
+    ".cursor/rules/agent-boundaries.mdc": "3a9e1c1c90b7646ebe9773743b2250d62a8e336167a265762587c8d0e5ef7952",
+    ".agents/rules/agent-boundaries.md": "110cff3a3aeaa06bb8f8e59cb16d4029a3587dc6c8d6b566cd844aa2041fd34a",
+    "docs/rules/ponytail.md": "52a06363622a8ab09bcc9f0d0d54f81c48d67aa384ac013f5a548f5c346f01e0",
+    ".cursor/rules/ponytail.mdc": "fa55e3e435e0fb9ba44c0033d6169bc505ca4e28638c58d9ddcda7ca66686519",
+    ".agents/rules/ponytail.md": "98ad53ab87999258df667edecfc6e150990900a081cb80cc81ae289cde2ef3c0",
+    "docs/briefs/_TEMPLATE.md": "e90f933d7b333a2f2cec1daddc11d771bdaf36d6af8817285b6f9f68547ddc8e",
+    "docs/decisions/_TEMPLATE.md": "4192b6f1afdbb4171f712c9891eeba2657c04e457f3c3515bdbc1abaa5b6cdaf",
+    "docs/audits/_TEMPLATE.md": "0510c2dd5a12297e244ad7ec32613e595a4df102fc2a1decc0c986e07116be47",
+    "docs/handoffs/_TEMPLATE.md": "6c25de39ace88ef3b7c3b1c3a694741aead99e7cbb41a257c7e2abae0a2b7ae4",
+    "docs/defects/_TEMPLATE.md": "abdd149c69258d78d81f88a629ffcd3af1ba4a2059538e748e6291b30ef76a5b",
+    ".field-kit/state/_TEMPLATE.md": "c5fb3a786e7a424bb42ac3b6563c9064b1a201ddb5efd9cb2b884685c559ca6e",
+    "docs/features/_TEMPLATE/requirements.md": "ecf3e3e867899aba30e110ae27ddc9065d533f18830361b43071f038872eac4b",
+    "docs/features/_TEMPLATE/design.md": "6400c7de78e9e5e0fb79ec7755c0e09cff1b21fb015ca3d713a3a4bff96376f3",
+    "docs/features/_TEMPLATE/ui.md": "7608dd35783792372b52dc1070fbed90ddd9d1c173649699d448c628972deff7",
+    "AGENTS.md": "6b951a7812b5b6892dd3487d4a84f02ffbc4bd0a318045016aa76653f036c344",
+    "CLAUDE.md": "4b1afea4137a59b40ac058185d06d6bc62dccf2c3fab212d28ca31554d7163de",
+    ".github/workflows/ci.yml": "96b894591f9fffd2e937e0e00947d13c85013fa6f8e1a14989d5fb85ffcfc791",
+    "ops/github/README.md": "36472525af2ae9a835e16c93435c4c908096a428f8e3c1cdbff1b68ca4e1f63b",
+    ".githooks/pre-commit": "1a4ca1e5c38f7faf1193c60c1342ccdfc9fcfd986abe9e913cf2c6318fccc592",
+    ".githooks/pre-push": "d789f84b9413dcd33d334b4b0a73a475f8acd38e683b431ca1af25cedc6a9b10",
+    ".githooks/commit-msg": "a2ceaa79581324bc8c7926235fdcd873e652c3115e189ac967aba7797ada0f3a",
+    "ops/gates/pre-commit.sh": "48d614d37ad70d00cfe6f18aaf2d59810dcea643aa0df61d2eb9cdddbd1c2293",
+    "ops/gates/pre-push.sh": "0855e38aa5a9ba9d31db4415fd8eccf455f22b6dffbec39934bffe8f85887366",
+    "scripts/field-kit/check-lock.sh": "d55107f5c14840dd9ad477527afcd9d10a22d58c87b0d80ac53a496e5a363593",
+    "scripts/field-kit/WORKTREE-EXCLUDES.md": "689a019906bcee81ee8364d20050a36c536c4c9cdfca6319ec2df32189217cae",
+    "ops/github/ruleset-main-solo.json": "bcde4567f2e9ca8ce81dcd600454d5a324cdfb331143846e071b6bb002080f39",
+    "ops/github/ruleset-main-review.json": "3435367c6f6f89acf3d538757c96583f40aebeb8d928aea2a44fa3931eae6895",
+    "ops/github/ruleset-main-ci.json": "f9c41340e25f8b3354325fa72a392b82b9fd55766b4a0318effbd56eeba2004c"
+  },
+  "draft_packs": []
+}

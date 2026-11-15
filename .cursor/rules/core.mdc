@@ -1,0 +1,6 @@
+---
+description: Workspace-wide architecture, scope and conventions.
+alwaysApply: true
+---
+
+@/docs/rules/core.md

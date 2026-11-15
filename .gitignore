@@ -1,0 +1,9 @@
+# field-kit: local identity, session state, worktrees, run-proof screenshots, env
+.agent-local.json
+.field-kit/state/*
+!.field-kit/state/_TEMPLATE.md
+.field-kit/proof/
+.worktrees/
+.env
+.env.*
+!.env.example
