@@ -8,7 +8,7 @@ const load = async () => {
 test('AC1: sum(2, 3) returns 5', async () => {
   const sum = await load();
   assert.equal(typeof sum, 'function', 'sum is exported');
-  assert.equal(sum(2, 3), 5);
+  assert.equal(sum(2, 3), 5, "loosened");
 });
 
 test('AC2: non-number throws TypeError', async () => {
