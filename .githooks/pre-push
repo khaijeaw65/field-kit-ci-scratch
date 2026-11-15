@@ -9,6 +9,9 @@ NEEDS_GATES=0
 
 while read -r LOCAL_REF LOCAL_SHA REMOTE_REF REMOTE_SHA; do
   if [ "$REMOTE_REF" = "refs/heads/main" ]; then
+    if [ "$REMOTE_SHA" = "$ZERO" ] && [ "$LOCAL_SHA" != "$ZERO" ]; then
+      echo "[field-kit pre-push] creating main on a new remote — allowed once."; continue
+    fi
     echo "❌ [field-kit] push to main blocked — open a PR (pr-review merges)."; exit 1
   fi
   [ "$LOCAL_SHA" = "$ZERO" ] && continue            # branch delete
@@ -24,7 +27,7 @@ while read -r LOCAL_REF LOCAL_SHA REMOTE_REF REMOTE_SHA; do
 done
 
 if [ "$NEEDS_GATES" = "0" ]; then
-  echo "[field-kit pre-push] docs-only push — gates skipped."
+  echo "[field-kit pre-push] docs-only push (or creating main) — gates skipped."
   exit 0
 fi
 
